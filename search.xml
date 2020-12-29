@@ -4,11 +4,11 @@
   
     
     <entry>
-      <title>Hello World</title>
-      <link href="2020/12/23/hello-world/"/>
-      <url>2020/12/23/hello-world/</url>
+      <title>网站终于上线了</title>
+      <link href="2020/12/30/wang-zhan-zhong-yu-shang-xian-liao/"/>
+      <url>2020/12/30/wang-zhan-zhong-yu-shang-xian-liao/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class=" language-bash"><code class="language-bash">$ hexo new <span class="token string">"My New Post"</span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class=" language-bash"><code class="language-bash">$ hexo server</code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class=" language-bash"><code class="language-bash">$ hexo generate</code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class=" language-bash"><code class="language-bash">$ hexo deploy</code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<div class="ipage"> <div class="ititle">网站终于上线了</div>  <div class="izhengwen">    <p>从今天暑假实习的时候真正接触前端的项目开始的时候，就一直想写一个自己的个人博客。但是由于由于对后端的语言的不熟悉，这件事情一直在搁置。</p>    <p>最初的想法是采用前后端分离开发，前端用vue.js框架，后端使用node.js的express框架。尝试之后发现要花大量的时间在页面的UI设计上面，两外一个问题是，其实个人博客大多是静态页面，并不需要    很多的前后端交互的内容。后来机缘中发现了hexo这个框架，这个框架的最大的好处就是我们可以使用很多的内置主题，不用很大的精力就可以搭建出页面优美的界面。让我们可以更好地专注于撰写自己的个人博    客内容。</p>    <p>因为前期拥有前端vue框架的使用经历，在博客的搭建上还算顺利。本博客使用的是matery主题，后面再这个基础上添加了一些额外的功能，例如相册功能以及实时说说的发布，后期如果碰到有趣的模块，会继续添加的。    除此之外，除了技术博客之外，后面我会将以前一些有感触的日志和微博搬移到这里。就当做是自己的一个小天地吧。    </p>  </div></div>]]></content>
       
       
       <categories>
