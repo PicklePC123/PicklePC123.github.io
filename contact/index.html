@@ -314,20 +314,28 @@
                 <div class="tag-title center-align">
                     <i class="fas fa-comments"></i>&nbsp;&nbsp;留言板
                 </div>
-                <p id="hitokoto">获取中...</p>
-<script src="https://v1.hitokoto.cn/?encode=js&amp;select=%23hitokoto" defer=""></script>
-
-<!-- 新 API 方法， 十分简洁 -->
-<script src="https://v1.hitokoto.cn/?encode=js&amp;select=%23hitokoto" defer=""></script>
-<!-- 加入网易云音乐热门评论，实时更新 -->
-<div class="poem-wrap">
+                <div class="poem-wrap">
     <div class="poem-border poem-left">
     </div>
     <div class="poem-border poem-right">
     </div>
-    <h1>热评</h1>
-    <p id="poem">loading...</p>
-    <p id="info">loading...</p>
+    <h1>每日一句</h1>
+    <p id="hitokoto"><a href="#" id="hitokoto_text">:D 获取中...</a></p>
+    <br>
+<script>
+  var xhr = new XMLHttpRequest();
+  xhr.open('get', 'https://v1.hitokoto.cn?c=a');
+  xhr.onreadystatechange = function () {
+    if (xhr.readyState === 4) {
+      var data = JSON.parse(xhr.responseText);
+      var hitokoto = document.getElementById('hitokoto_text');
+      hitokoto.href = 'javascript:void(0);';
+      hitokoto.innerText = data.hitokoto;
+      hitokoto.style.color = "#333";
+    }
+  };
+  xhr.send();
+</script>
 </div>
 
             </div>
@@ -678,21 +686,6 @@
     </div>
 
 </main>
-
-
-<script>
-    $.get("https://v1.hitokoto.cn?c=d&c=h&c=j",function(datastatus){
-        if(status=='success'){
-            $('#poem').html(data.hitokoto)
-            if(data.from_who!=null){
-                $('#info').html(data.from_who+" · " + "<<" +data.from+ ">>");
-            }
-            else{
-                $('#info').html(" “ "+data.from+"” ");
-            }
-        }
-        else{$('#poem').html("获取出错啦");}});
-</script>
 
 
 
