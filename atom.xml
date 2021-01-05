@@ -6,7 +6,7 @@
   <link href="http://www.picklepc.cn/atom.xml" rel="self"/>
   
   <link href="http://www.picklepc.cn/"/>
-  <updated>2020-12-29T19:05:39.711Z</updated>
+  <updated>2021-01-05T10:36:43.699Z</updated>
   <id>http://www.picklepc.cn/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://www.picklepc.cn/2020/12/30/wang-zhan-zhong-yu-shang-xian-liao/"/>
     <id>http://www.picklepc.cn/2020/12/30/wang-zhan-zhong-yu-shang-xian-liao/</id>
     <published>2020-12-29T18:41:30.010Z</published>
-    <updated>2020-12-29T19:05:39.711Z</updated>
+    <updated>2021-01-05T10:36:43.699Z</updated>
     
     <content type="html"><![CDATA[<div class="ipage"> <div class="ititle">网站终于上线了</div>  <div class="izhengwen">    <p>从今天暑假实习的时候真正接触前端的项目开始的时候，就一直想写一个自己的个人博客。但是由于由于对后端的语言的不熟悉，这件事情一直在搁置。</p>    <p>最初的想法是采用前后端分离开发，前端用vue.js框架，后端使用node.js的express框架。尝试之后发现要花大量的时间在页面的UI设计上面，两外一个问题是，其实个人博客大多是静态页面，并不需要    很多的前后端交互的内容。后来机缘中发现了hexo这个框架，这个框架的最大的好处就是我们可以使用很多的内置主题，不用很大的精力就可以搭建出页面优美的界面。让我们可以更好地专注于撰写自己的个人博    客内容。</p>    <p>因为前期拥有前端vue框架的使用经历，在博客的搭建上还算顺利。本博客使用的是matery主题，后面再这个基础上添加了一些额外的功能，例如相册功能以及实时说说的发布，后期如果碰到有趣的模块，会继续添加的。    除此之外，除了技术博客之外，后面我会将以前一些有感触的日志和微博搬移到这里。就当做是自己的一个小天地吧。    </p>  </div></div>]]></content>
     
@@ -30,8 +30,9 @@
       
     <summary type="html">&lt;div class=&quot;ipage&quot;&gt;
  &lt;div class=&quot;ititle&quot;&gt;网站终于上线了&lt;/div&gt;
+
   &lt;div class=&quot;izhengwen&quot;&gt;
-    &lt;p&gt;从今天暑假实习的时候真正接触前端的项目开始的时候，就一直想写一个自己的个人博客。但是由于由于对后端的语言</summary>
+    &lt;p&gt;从今天暑假实习的时候真正接触前端的项目开始的时候，就一直想写一个自己的个人博客。但是由于由于对后端的语</summary>
       
     
     

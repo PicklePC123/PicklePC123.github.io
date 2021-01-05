@@ -120,22 +120,22 @@
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/contact" class="waves-effect waves-light">
+    <a href="/galleries" class="waves-effect waves-light">
       
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
+      <i class="fas fa-image" style="zoom: 0.6;"></i>
       
-      <span>留言板</span>
+      <span>相册</span>
     </a>
     
   </li>
   
   <li class="hide-on-med-and-down nav-item">
     
-    <a href="/galleries" class="waves-effect waves-light">
+    <a href="/contact" class="waves-effect waves-light">
       
-      <i class="fas fa-image" style="zoom: 0.6;"></i>
+      <i class="fas fa-comments" style="zoom: 0.6;"></i>
       
-      <span>相册</span>
+      <span>留言板</span>
     </a>
     
   </li>
@@ -234,22 +234,22 @@
         
         <li class="m-nav-item">
 	  
-		<a href="/contact" class="waves-effect waves-light">
+		<a href="/galleries" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-comments"></i>
+			    <i class="fa-fw fas fa-image"></i>
 			
-			留言板
+			相册
 		</a>
           
         </li>
         
         <li class="m-nav-item">
 	  
-		<a href="/galleries" class="waves-effect waves-light">
+		<a href="/contact" class="waves-effect waves-light">
 			
-			    <i class="fa-fw fas fa-image"></i>
+			    <i class="fa-fw fas fa-comments"></i>
 			
-			相册
+			留言板
 		</a>
           
         </li>
@@ -307,7 +307,6 @@
 
     </div>
 </div>
-
 <main class="content">
     <div id="contact" class="container chip-container">
         <div class="card">
@@ -315,7 +314,22 @@
                 <div class="tag-title center-align">
                     <i class="fas fa-comments"></i>&nbsp;&nbsp;留言板
                 </div>
-                
+                <p id="hitokoto">获取中...</p>
+<script src="https://v1.hitokoto.cn/?encode=js&amp;select=%23hitokoto" defer=""></script>
+
+<!-- 新 API 方法， 十分简洁 -->
+<script src="https://v1.hitokoto.cn/?encode=js&amp;select=%23hitokoto" defer=""></script>
+<!-- 加入网易云音乐热门评论，实时更新 -->
+<div class="poem-wrap">
+    <div class="poem-border poem-left">
+    </div>
+    <div class="poem-border poem-right">
+    </div>
+    <h1>热评</h1>
+    <p id="poem">loading...</p>
+    <p id="info">loading...</p>
+</div>
+
             </div>
         </div>
         <div class="card">
@@ -662,7 +676,24 @@
 			
         </div>
     </div>
+
 </main>
+
+
+<script>
+    $.get("https://v1.hitokoto.cn?c=d&c=h&c=j",function(datastatus){
+        if(status=='success'){
+            $('#poem').html(data.hitokoto)
+            if(data.from_who!=null){
+                $('#info').html(data.from_who+" · " + "<<" +data.from+ ">>");
+            }
+            else{
+                $('#info').html(" “ "+data.from+"” ");
+            }
+        }
+        else{$('#poem').html("获取出错啦");}});
+</script>
+
 
 
     <footer class="page-footer bg-color">
