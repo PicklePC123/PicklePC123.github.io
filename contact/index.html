@@ -319,25 +319,33 @@
     </div>
     <div class="poem-border poem-right">
     </div>
-    <h1>每日一句</h1>
-    <p id="hitokoto"><a href="#" id="hitokoto_text">:D 获取中...</a></p>
-    <br>
-<script>
-  var xhr = new XMLHttpRequest();
-  xhr.open('get', 'https://v1.hitokoto.cn?c=a');
-  xhr.onreadystatechange = function () {
-    if (xhr.readyState === 4) {
-      var data = JSON.parse(xhr.responseText);
-      var hitokoto = document.getElementById('hitokoto_text');
-      hitokoto.href = 'javascript:void(0);';
-      hitokoto.innerText = data.hitokoto;
-      hitokoto.style.color = "#333";
-    }
-  };
-  xhr.send();
-</script>
+    <h1>热评</h1>
+    <p id="poem"></p>
+    <p id="info">loading...</p>
+    <p id="from"></p>
 </div>
 
+
+<script>
+  fetch('https://v1.hitokoto.cn?c=d&c=h&c=j')
+    .then(response => response.json())
+    .then(data => {
+      const info = document.getElementById('info');
+      const from = document.getElementById('from');
+      if (data.from)
+      {
+          from.innerHTML =  '————' + '     ' + data.from;
+      }
+
+      info.innerHTML = " “ "+data.hitokoto+"” ";
+
+    })
+    .catch(function() {
+      const poem = document.getElementById('poem');
+      poem.innerHTML = '获取出错了'
+
+    })
+</script>
             </div>
         </div>
         <div class="card">
