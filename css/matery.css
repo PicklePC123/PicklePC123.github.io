@@ -2224,7 +2224,9 @@ footer .copy-right {
 }
 .poem-wrap p#from {
     font-size: 20px;
-    margin: 30px auto;
+    margin: 15px auto;
+    margin-right: 0px;
+    margin-bottom: 25px;
 }
 .poem-border {
     position: absolute;
